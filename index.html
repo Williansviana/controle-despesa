@@ -8,8 +8,27 @@
 </head>
 <body>
     <div class="container">
-        <h1>Controle de Contas 2024 - Novembro  </h1>
-        
+        <h1>Controle de Contas - 2024</h1>
+
+        <!-- Seleção de Mês -->
+        <div class="month-selector">
+            <label for="month">Selecione o Mês:</label>
+            <select id="month">
+                <option value="Janeiro">Janeiro</option>
+                <option value="Fevereiro">Fevereiro</option>
+                <option value="Março">Março</option>
+                <option value="Abril">Abril</option>
+                <option value="Maio">Maio</option>
+                <option value="Junho">Junho</option>
+                <option value="Julho">Julho</option>
+                <option value="Agosto">Agosto</option>
+                <option value="Setembro">Setembro</option>
+                <option value="Outubro">Outubro</option>
+                <option value="Novembro" selected>Novembro</option>
+                <option value="Dezembro">Dezembro</option>
+            </select>
+        </div>
+
         <!-- Formulário para adicionar transações -->
         <div class="form">
             <input type="text" id="description" placeholder="Descrição da Conta">
@@ -20,8 +39,6 @@
                 <option value="saida">Saída</option>
             </select>
             <button id="add-transaction-btn">Adicionar</button>
-            <a href="./Dezembro.html"><img src="./img/proxima-data.png" alt="frente"></a>
-            
         </div>
         
         <!-- Tabela de transações -->
