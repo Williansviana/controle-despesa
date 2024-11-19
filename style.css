@@ -1,7 +1,7 @@
 /* Estilização básica */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f9;
+  background-color: gray;
   margin: 0;
   padding: 20px;
 }
@@ -39,6 +39,8 @@ button {
   color: white;
   cursor: pointer;
   border: none;
+  font-size: 14px;
+  
 }
 
 button:hover {
@@ -69,4 +71,8 @@ th {
 .summary {
   text-align: center;
   font-size: 18px;
+}
+
+img{
+  width: 35px;
 }
