@@ -50,7 +50,8 @@ function updateTable() {
         row.innerHTML = `
             <td>${transaction.description}</td>
             <td>R$ ${transaction.amount.toFixed(2)}</td>
-            <td>${transaction.dueDate}</td>
+            <td>${formatDate(transaction.dueDate)}</td>
+            
             <td>${transaction.type}</td>
             <td>${transaction.status ? "Paga" : "Pendente"}</td>
             <td>
@@ -63,6 +64,12 @@ function updateTable() {
     });
 
     updateSummary();
+}
+
+// Função para formatar a data no padrão brasileiro
+function formatDate(date) {
+    const [year, month, day] = date.split("-");
+    return `${day}/${month}/${year}`;
 }
 
 // Adicionar transação
